@@ -1,5 +1,5 @@
-This is a basic Python3 (Albeit Crappy) port scanner.
+This is a basic Python3 port scanner.
 
-It scans ports up to 1000
+Currently, it scans ports up to 1000. This small, simple project has taken a backburner for now.
 
-basic usage is python3 scanner.py <ip>
+Basic usage is python3 scanner.py <ip>
