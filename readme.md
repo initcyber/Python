@@ -1,4 +1,4 @@
-# Python Codes and Scipes
+# Python Codes and Scripts
 These are python scripts I am either working on, borrowed from others and improved (with citing), or developing currently.
 
 ## Calculator
