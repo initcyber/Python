@@ -10,8 +10,20 @@ else:
 	sys.exit()
 
 def DNSScan(target):
-	ans,unans = sr(IP(dst=target)/UDP(sport=5555, dport=53)/DNS(rd=1,qd=DNSQR(qname="google.com")),timeout=2, verbose=0) #Including Source Port (sport) if we wanted to use wireshark
-	if ans:
-		print("Host is up at %s" %target)
+    """
+    Perform a DNS scan on the target.
+
+    Args:
+    target (str): The target IP address.
+
+    Returns:
+    None
+    """
+    # Send DNS request to the target and wait for a response
+    ans, unans = sr(IP(dst=target)/UDP(sport=5555, dport=53)/DNS(rd=1, qd=DNSQR(qname="google.com")), timeout=2, verbose=0)
+
+    # If a response is received, print that the host is up
+    if ans:
+        print("Host is up at %s" % target)
 		
 DNSScan(target)
