@@ -1,3 +1,4 @@
 nessustest.py
 /Nessus/data/*
 !/Nessus/data/sample.csv
+/CybersecurityTools/HashCrack/rock*
